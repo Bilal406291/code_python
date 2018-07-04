@@ -1,0 +1,150 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+\section{List} 
+\begin{enumerate}
+\item  List Defining
+
+\begin{verbatim}
+          
+     arr = list() 
+     
+     or, 
+     
+     arr = [] 
+     
+     or, 
+     
+     arr = [1,2,3] 
+     
+     or, 
+     
+     s=input()
+     list_1=list(map(int, s.split()))
+   
+\end{verbatim}
+
+\item operations or methods
+
+  \begin{enumerate} 
+    \item append(x) : Adds a single element x to the end of a list.
+    \begin{verbatim}
+          
+     arr = list() 
+     
+     or, 
+     
+     arr = [] 
+    
+     arr.append(1)
+     arr.append(2)
+     arr.append(3)
+     
+     then should print  arr =[1,2,3]
+   
+    \end{verbatim}
+    
+    \item extend(L): Merges another list L to the end. 
+    
+    \begin{verbatim}
+          
+     a =[1,2,3]
+     
+     b = [4,5]
+     
+     c=a.extend(b)
+     
+     then c=[1,2,3,4,5] 
+   
+    \end{verbatim}
+    
+    \item insert(i,x): Inserts element x at position i. 
+    
+    \begin{verbatim}
+          
+     a =[1,2,3]
+     
+     b = [5,6]
+     
+     a.extend(b)
+     
+    then a=[1,2,3,5,6] 
+    
+    a.insert(3,4)
+    
+    then a=[1,2,3,4,5,6]
+     
+    \end{verbatim}
+    
+    \item  remove(x): Removes the first occurrence of element x. 
+    
+    \begin{verbatim}
+     
+    a=[1,2,3,4,5,6]
+    a.remove(3)
+    
+    then a=[1,2,3,5,6]
+   
+    \end{verbatim}
+    
+    \item pop(): Removes the last element of a list. If an argument is passed, that index item is popped out.
+    \begin{verbatim}
+     
+    a=[1,2,3,4,5,6]
+    a.pop()
+    
+    then a=[1,2,3,4,5]
+    \end{verbatim}
+    
+    \item index(x): Returns the first index of a value in the list. Throws an error if it's not found. 
+    \begin{verbatim}
+     
+    a=[1,2,3,4,5,6]
+    
+    i=a.index(3)
+    
+    then i=2
+    
+    \end{verbatim}
+    
+    \item count(x): Counts the number of occurrences of an element x. 
+    
+    \begin{verbatim}
+     
+    a=[1,2,3,2,5,2]
+    
+    c=a.count(2)
+    
+    then c=3
+    
+    \end{verbatim}
+    
+    \item sort(): Sorts the list. 
+    
+    \begin{verbatim}
+     
+    a=[1,2,3,2,5,2]
+    
+    a.sort()
+    
+    then a=[1,2,2,2,3,5]
+    
+    \end{verbatim}
+    
+    \item reverse(): Reverses the list.
+    
+    \begin{verbatim}
+     
+    a=[1,2,3,4]
+    
+    a.reverse()
+    
+    then a=[4,3,2,1]
+    
+    \end{verbatim}
+
+  \end{enumerate}
+     
+
+\end{enumerate}
+\end{document}
